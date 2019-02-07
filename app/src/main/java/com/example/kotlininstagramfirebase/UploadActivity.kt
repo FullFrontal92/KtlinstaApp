@@ -59,7 +59,7 @@ class UploadActivity : AppCompatActivity() {
 
             myRef!!.child("Posts").child(uuidString).child("useremail").setValue(userEmail)
             myRef!!.child("Posts").child(uuidString).child("comment").setValue(userComment)
-            myRef!!.child("Posts").child(uuidString).child(downloadURL).setValue(downloadURL)
+            myRef!!.child("Posts").child(uuidString).child("downloadURL").setValue(downloadURL)
 
         }.addOnFailureListener { exception ->
             if (exception!=null){

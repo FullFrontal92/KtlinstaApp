@@ -25,7 +25,7 @@ class SignInActivity : AppCompatActivity() {
     }
 
 
-    fun sign_in(view : View){
+    fun signIn(view : View){
 
         mAuth!!.signInWithEmailAndPassword(emailText.text.toString(),passwordText.text.toString())
             .addOnCompleteListener { task ->
@@ -33,12 +33,14 @@ class SignInActivity : AppCompatActivity() {
                     val intent = Intent(applicationContext,FeedActivity::class.java)
                     startActivity(intent)
                 }
+            }.addOnFailureListener { exception ->
+                Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
             }
 
 
     }
 
-    fun sign_up(view: View){
+    fun signUp(view: View){
 
         mAuth!!.createUserWithEmailAndPassword(emailText.text.toString(),passwordText.text.toString())
             .addOnCompleteListener{ task ->
