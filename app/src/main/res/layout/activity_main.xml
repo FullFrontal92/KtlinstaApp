@@ -5,4 +5,36 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SignInActivity"/>
+        tools:context=".SignInActivity">
+    <EditText
+            android:id="@+id/emailText"
+            android:hint="e-mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="james@metallica.com"
+            android:ems="10"
+            tools:layout_editor_absoluteY="164dp" tools:layout_editor_absoluteX="118dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:text="123456"
+            android:ems="10"
+            tools:layout_editor_absoluteY="281dp" tools:layout_editor_absoluteX="117dp" android:id="@+id/passwordText"/>
+    <Button
+            android:text="Sign In"
+            android:onClick="signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="449dp"
+            tools:layout_editor_absoluteX="117dp" android:id="@+id/button"/>
+    <Button
+            android:text="Sign Up"
+            android:onClick="signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="449dp"
+            tools:layout_editor_absoluteX="234dp" android:id="@+id/button2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

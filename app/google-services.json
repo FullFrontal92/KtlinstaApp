@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "775382566876",
+    "firebase_url": "https://myktlinsta.firebaseio.com",
+    "project_id": "myktlinsta",
+    "storage_bucket": "myktlinsta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775382566876:android:eccc638921a146a7",
+        "android_client_info": {
+          "package_name": "com.example.kotlininstagramfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775382566876-ds2j6lt6fah9a0sijv2lu0i6lr2d0pt0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kotlininstagramfirebase",
+            "certificate_hash": "1cad3f3f3640a3dc993860b3195a46c00d9f8f91"
+          }
+        },
+        {
+          "client_id": "775382566876-92ovm9nhbq5l8na51b7od4qpm0i01395.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3ycFRX2EXYHPJjJTXjVW5Ghld4lfb-lQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775382566876-92ovm9nhbq5l8na51b7od4qpm0i01395.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
