@@ -50,12 +50,17 @@ class UploadActivity : AppCompatActivity() {
 
         storageReference.putFile(selected!!).addOnSuccessListener { taskSnapshot ->
             val downloadURL = taskSnapshot.downloadUrl.toString()
-            val userDictionary =  mAuth!!.currentUser
+            val user = mAuth!!.currentUser
             val userEmail = user!!.email.toString()
             val userComment = commentText.text.toString()
 
             val uuid = UUID.randomUUID()
             val uuidString = uuid.toString()
+
+            myRef!!.child("Posts").child(uuidString).child("useremail").setValue(userEmail)
+            myRef!!.child("Posts").child(uuidString).child("comment").setValue(userComment)
+            myRef!!.child("Posts").child(uuidString).child("downloadurl").setValue(downloadURL)
+
 
             myRef!!.child("Posts").child(uuidString).child("useremail").setValue(userEmail)
             myRef!!.child("Posts").child(uuidString).child("comment").setValue(userComment)
